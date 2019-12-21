@@ -6,8 +6,12 @@ functions:
   helloworld:
     lang: go
     handler: ./helloworld
-    image: nachiket-p/helloworld:latest
+    image: nachiketp/helloworld:latest
   hello-python:
     lang: python3
     handler: ./hello-python
-    image: nachiket-p/hello-python:latest
+    image: nachiketp/hello-python:latest
+  to-csv:
+    lang: node12
+    handler: ./to-csv
+    image: nachiketp/to-csv:latest
