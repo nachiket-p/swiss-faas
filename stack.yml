@@ -2,6 +2,10 @@ version: 1.0
 provider:
   name: openfaas
   gateway: http://localhost:31112
+configuration:
+  templates:
+    - name: fnkit-node12
+      url: https://github.com/nachiket-p/fnkit-template
 functions:
   helloworld:
     lang: go
@@ -18,4 +22,8 @@ functions:
   fn-math:
     lang: fnkit-node12
     handler: ./fn-math
-    image: fn-math:latest
+    image: nachiketp/fn-math:latest
+  fn-string:
+    lang: fnkit-node12
+    handler: ./fn-string
+    image: nachiketp/fn-string:latest
